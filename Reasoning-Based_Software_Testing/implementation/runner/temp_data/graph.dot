@@ -1,0 +1,11 @@
+digraph g {
+ "vehicle_in_adjacent_two_wheeled" -> "vehicle_in_opposite_two_wheeled" [dir=both, arrowtail=normal, arrowhead=odot]; 
+ "min_dist_with_other_vehicles" -> "vehicle_in_front" [dir=both, arrowtail=odot, arrowhead=odot]; 
+ "driving_task" -> "road_type" [dir=both, arrowtail=odot, arrowhead=normal]; 
+ "min_dist_static_obstacles" -> "road_type" [dir=both, arrowtail=normal, arrowhead=normal]; 
+ "presence_of_buildings" -> "vehicle_in_adjacent_two_wheeled" [dir=both, arrowtail=odot, arrowhead=normal]; 
+ "dist_traveled" -> "max_dist_center_of_the_lane" [dir=both, arrowtail=normal, arrowhead=normal]; 
+ "min_dist_with_pedestrians" -> "pedestrian" [dir=both, arrowtail=odot, arrowhead=odot]; 
+ "max_dist_center_of_the_lane" -> "min_dist_static_obstacles" [dir=both, arrowtail=normal, arrowhead=normal]; 
+ "dist_traveled" -> "road_type" [dir=both, arrowtail=normal, arrowhead=normal]; 
+}

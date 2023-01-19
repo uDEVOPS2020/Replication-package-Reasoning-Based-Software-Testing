@@ -1,0 +1,4 @@
+technique,avg_generation_time,avg_scenario_time,overhead
+RBST, 0:00:01.443335,0:07:13.309560,0.34
+SBST-ML, 0:00:00,0:07:29.278437,0.0
+ART, 0:00:00,0:07:06.783320,0.0
